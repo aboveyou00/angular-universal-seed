@@ -1,0 +1,33 @@
+{
+    "name": "angular-universal-seed",
+    "version": "6.0.0",
+    "description": "A seed project for an Angular universal app.",
+    "scripts": {
+        "test": "bash ./scripts/test.sh",
+        "travis": "bash ./scripts/travis.sh"
+    },
+    "author": {
+        "name": "Brandon Slade",
+        "email": "brandonyoyoslade@gmail.com",
+        "url": "http://brandonslade.me"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "~2.7.2"
+    },
+    "dependencies": {},
+    "keywords": [
+        "angular",
+        "angular-universal",
+        "angular-seed",
+        "angular-universal-seed"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aboveyou00/angular-universal-seed.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aboveyou00/angular-universal-seed/issues"
+    },
+    "homepage": "https://github.com/aboveyou00/angular-universal-seed#readme"
+}
