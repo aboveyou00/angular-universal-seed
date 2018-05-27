@@ -4,7 +4,7 @@
 const { SpecReporter } = require('jasmine-spec-reporter');
 
 let chromeArgs = [];
-if (process.env.TRAVIS) chromeArgs.push('--headless', '--disable-gpu', '--window-size=800x600');
+if (process.env.TRAVIS) chromeArgs.push('--headless', '--no-sandbox', '--disable-gpu', '--window-size=800x600');
 
 exports.config = {
     allScriptsTimeout: 11000,

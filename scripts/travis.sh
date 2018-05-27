@@ -2,8 +2,8 @@
 
 set -e
 
-yarn test --watch=false
-yarn e2e
-yarn lint
+TRAVIS=true yarn test --watch=false
+TRAVIS=true yarn e2e
+TRAVIS=true yarn lint
 
 exit 0

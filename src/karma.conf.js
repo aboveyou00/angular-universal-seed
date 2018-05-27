@@ -5,7 +5,7 @@ module.exports = function(config) {
     process.env.CHROME_BIN = require('puppeteer').executablePath();
     
     let browsers = [];
-    if (process.env.TRAVIS) browsers.push('ChromeHeadless');
+    if (process.env.TRAVIS) browsers.push('ChromeHeadlessNoSandbox');
     else browsers.push('Chrome');
     
     config.set({
@@ -32,6 +32,13 @@ module.exports = function(config) {
         logLevel: config.LOG_INFO,
         autoWatch: true,
         singleRun: false,
-        browsers
+        browsers,
+        
+        customLaunchers: {
+            ChromeHeadlessNoSandbox: {
+                base: 'ChromeHeadless',
+                flags: ['--no-sandbox']
+            }
+        }
     });
 };
