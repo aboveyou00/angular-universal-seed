@@ -1,3 +1,3 @@
 
 
-console.log('Something wicked this way comes.');
+export * from './server/index';

@@ -2,7 +2,7 @@
 
 set -e
 
-yarn test once
+yarn test
 yarn lint
 
 exit 0

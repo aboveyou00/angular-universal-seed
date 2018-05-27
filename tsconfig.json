@@ -2,9 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "outDir": "dist",
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
         "rootDir": "src",
         "sourceMap": true,
+        "declaration": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
@@ -16,18 +18,12 @@
         "noImplicitAny": true,
         "pretty": true,
         "skipLibCheck": true,
-        "lib": ["es6", "dom"],
-        "baseUrl": ".",
+        "lib": ["es2017", "dom"],
         "paths": {
             "*": ["node_modules/*", "src/*"]
         },
-        "types": [
-            "express",
-            "node",
-            "body-parser",
-            "serve-static",
-            "express-serve-static-core",
-            "mime"
+        "typeRoots": [
+            "node_modules/@types"
         ]
     },
     "exclude": [
