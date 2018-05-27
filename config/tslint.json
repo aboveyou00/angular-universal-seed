@@ -1,0 +1,16 @@
+{
+    "rules": {
+        "adjacent-overload-signatures": true,
+        "no-magic-numbers": [false],
+        "no-var-requires": true,
+        
+        "no-console": [true],
+        "no-debugger": true,
+        "no-var-keyword": true,
+        "no-duplicate-variable": true,
+        "no-eval": true,
+        
+        "no-unused-expression": true,
+        "no-switch-case-fall-through": true
+    }
+}
