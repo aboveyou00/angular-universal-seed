@@ -2,7 +2,7 @@
 
 set -e
 
-yarn test
+yarn test --watch=false
 yarn lint
 
 exit 0

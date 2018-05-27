@@ -1,14 +1,13 @@
-import { config } from './config';
 import { initializeRoutesAndListen } from './router';
 
 (async () => {
     console.log(`Starting server...`);
     
-    let port = config.try('server.port', 8081);
+    const port = 8081;
     
     try {
         console.log(`Mapping routes and starting express server...`);
-        let server = await initializeRoutesAndListen(port);
+        await initializeRoutesAndListen(port);
     }
     catch (e) {
         console.error(e);
